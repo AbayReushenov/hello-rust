@@ -1,10 +1,13 @@
 mod control_flow;
 mod functions;
 mod variables;
+mod shadowing_muts;
 
 use control_flow::control_flow_example;
 use functions::functions_example;
 use variables::variables_example;
+use shadowing_muts::shadowing_muts_functions;
+
 
 fn main() {
     println!("=== День 1: Основы Rust ===\n");
@@ -40,4 +43,9 @@ fn main() {
     if is_web3_ready {
         println!("Можно переходить к изучению блокчейн разработки!");
     }
+
+    // Примеры Иммутабельности и shadowing
+    println!("6.  Иммутабельности и shadowing");
+    shadowing_muts_functions();
+    println!();
 }
